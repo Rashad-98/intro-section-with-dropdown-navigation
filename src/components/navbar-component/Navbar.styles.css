@@ -1,0 +1,71 @@
+#navbar {
+    position: relative;   /* The reason why this is relative is here https://stackoverflow.com/questions/10487292/position-absolute-but-relative-to-parent */
+    grid-area: head;
+    display: flex;
+    align-items: center;
+    border-style: dashed;
+    width: 100%;
+}
+
+#links {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 25rem;
+    justify-content: space-between;
+    color: hsl(0, 0%, 41%);
+    position: relative;
+    left: 5%;
+}
+
+#profile-links {
+    display: flex;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    color: hsl(0, 0%, 41%);
+    position: absolute;
+    right: 0px;
+    width: 12rem;
+    justify-content: space-between;
+}
+
+#register-link {
+    display: flex;
+    border: 2px solid;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    height: 2.5rem;
+    width: 7rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.offcanvas-menu {
+    position: absolute;
+    right: 0px;
+}
+
+#icon-menu {
+    display: none;
+}
+
+#icon-close-menu {
+    display: none;
+}
+
+.arrow-up {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    #icon-menu {
+        display: block;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #profile-links {
+        display: none;
+    }
+}

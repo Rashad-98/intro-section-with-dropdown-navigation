@@ -1,0 +1,17 @@
+.test-div {
+    grid-area: head;
+    display: flex;
+    width: fit-content;
+    border-style: dashed;
+    flex-wrap: wrap;
+}
+
+.second-div {
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+    .second-div {
+        display: block;
+    }
+}
