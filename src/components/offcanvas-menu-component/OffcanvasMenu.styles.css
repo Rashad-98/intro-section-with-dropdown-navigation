@@ -1,0 +1,19 @@
+#offcanvas-menu {
+    /* grid-area: head; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+}
+
+#menu {
+    width: 70%;
+    height: 100%;
+    background-color: hsl(0, 0%, 98%);
+}
+
+#background {
+    background-color: rgba(0%, 0%, 0%, 0.5);
+}
+
+/* TODO fix the offcanvas menu */

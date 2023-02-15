@@ -7,6 +7,13 @@ import { ReactComponent as IconCloseMenu } from './../../images/icon-close-menu.
 import { ReactComponent as IconMenu } from './../../images/icon-menu.svg';
 
 class Navbar extends React.Component{
+    openMenu(e) {
+        const icon = document.getElementById('icon-menu');
+        icon.style.display = 'none';
+        const iconClose = document.getElementById('icon-close-menu');
+        iconClose.style.display = 'block';
+    }
+
     render() {
         return(
             <React.Fragment>
@@ -39,16 +46,16 @@ class Navbar extends React.Component{
                         </div>
                     </div>
                     <div className="offcanvas-menu">
-                        <IconMenu id='icon-menu'/>
+                        <IconMenu id='icon-menu' onClick={this.openMenu}/>
                         <IconCloseMenu id='icon-close-menu'/>
                     </div>
                 </nav>
+                {/* <div className="fill-page">
+
+                </div> */}
             </React.Fragment>
         );
     }
 }
 
 export default Navbar;
-
-
-// TODO Add responsiveness to the mobile-view menu toggling
