@@ -8,10 +8,10 @@ import { ReactComponent as IconMenu } from './../../images/icon-menu.svg';
 
 class Navbar extends React.Component{
     openMenu(e) {
-        const icon = document.getElementById('icon-menu');
-        icon.style.display = 'none';
-        const iconClose = document.getElementById('icon-close-menu');
-        iconClose.style.display = 'block';
+        // const icon = document.getElementById('icon-menu');
+        // icon.style.display = 'none';
+        // const iconClose = document.getElementById('icon-close-menu');
+        // iconClose.style.display = 'block';
     }
 
     render() {
@@ -38,16 +38,16 @@ class Navbar extends React.Component{
                         </div>
                     </div>
                     <div id="profile-links">
-                        <div id="login-link">
+                        <div className="login-link">
                             Login
                         </div>
-                        <div id="register-link">
+                        <div className="register-link">
                             Register
                         </div>
                     </div>
                     <div className="offcanvas-menu">
                         <IconMenu id='icon-menu' onClick={this.openMenu}/>
-                        <IconCloseMenu id='icon-close-menu'/>
+                        {/* <IconCloseMenu id='icon-close-menu'/> */}
                     </div>
                 </nav>
                 {/* <div className="fill-page">

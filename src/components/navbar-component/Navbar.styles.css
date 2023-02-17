@@ -1,4 +1,5 @@
 #navbar {
+    box-sizing: border-box;
     position: relative;   /* The reason why this is relative is here https://stackoverflow.com/questions/10487292/position-absolute-but-relative-to-parent */
     grid-area: head;
     display: flex;
@@ -28,7 +29,7 @@
     justify-content: space-between;
 }
 
-#register-link {
+.register-link {
     display: flex;
     border: 2px solid;
     border-radius: 1rem;
@@ -48,9 +49,9 @@
     display: none;
 }
 
-#icon-close-menu {
+/* #icon-close-menu {
     display: none;
-}
+} */
 
 .arrow-up {
     display: none;
