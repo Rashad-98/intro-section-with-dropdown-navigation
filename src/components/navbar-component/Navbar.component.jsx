@@ -5,18 +5,20 @@ import { ReactComponent as ArrowUp } from './../../images/icon-arrow-up.svg';
 import { ReactComponent as ArrowDown } from './../../images/icon-arrow-down.svg';
 import { ReactComponent as IconCloseMenu } from './../../images/icon-close-menu.svg';
 import { ReactComponent as IconMenu } from './../../images/icon-menu.svg';
+import OffcanvasMenu from "../offcanvas-menu-component/OffcanvasMenu.component";
 
 class Navbar extends React.Component{
-    openMenu(e) {
-        // const icon = document.getElementById('icon-menu');
-        // icon.style.display = 'none';
-        // const iconClose = document.getElementById('icon-close-menu');
-        // iconClose.style.display = 'block';
+    toggleMenu(e) {
+        const offcanvasMenu = document.querySelector('#mobile-view-menu');
+        offcanvasMenu.classList.toggle('hidden');
     }
 
     render() {
         return(
             <React.Fragment>
+                <div id='mobile-view-menu' className='hidden'>
+                    <OffcanvasMenu closeMenu={this.toggleMenu} />
+                </div>
                 <nav id='navbar'>
                     <Logo />
                     <div id='links'>
@@ -46,13 +48,9 @@ class Navbar extends React.Component{
                         </div>
                     </div>
                     <div className="offcanvas-menu">
-                        <IconMenu id='icon-menu' onClick={this.openMenu}/>
-                        {/* <IconCloseMenu id='icon-close-menu'/> */}
+                        <IconMenu id='icon-menu' onClick={this.toggleMenu}/>
                     </div>
                 </nav>
-                {/* <div className="fill-page">
-
-                </div> */}
             </React.Fragment>
         );
     }

@@ -80,3 +80,14 @@
     box-sizing: border-box;
     background-color: rgba(0%, 0%, 0%, 0.5);
 } */
+
+.hidden {
+    display: none;
+}
+
+#mobile-view-menu {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+}

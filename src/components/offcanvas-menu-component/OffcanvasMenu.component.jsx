@@ -4,17 +4,12 @@ import {ReactComponent as ArrowDown} from './../../images/icon-arrow-down.svg';
 import { ReactComponent as IconCloseMenu } from './../../images/icon-close-menu.svg';
 import "./OffcanvasMenu.styles.css"
 
-class offcanvasMenu extends React.Component {
-
-    onClose() {
-        const offcanvasMenu = document.getElementById('offcanvas-menu');
-        offcanvasMenu.style.display = 'none';
-    }
+class OffcanvasMenu extends React.Component {
 
     render() {
         return(
             <div id='offcanvas-menu'>
-                <IconCloseMenu id='icon-close-menu' onClick={this.onClose}/>
+                <IconCloseMenu id='icon-close-menu' onClick={this.props.closeMenu}/>
                 <div id='background' />
                 <div id='menu'>
                     <div id="offcanvas-links">
@@ -49,4 +44,4 @@ class offcanvasMenu extends React.Component {
     }
 }
 
-export default offcanvasMenu
+export default OffcanvasMenu
