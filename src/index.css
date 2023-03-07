@@ -25,3 +25,8 @@ h1 {
 p {
   color: hsl(0, 0%, 41%);
 }
+
+#root {
+  display: flex;
+  justify-content: center;
+}

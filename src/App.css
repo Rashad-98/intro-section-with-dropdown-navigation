@@ -8,6 +8,7 @@
     grid-template-columns: 1fr 1fr;
     /* opacity: 0.5; */
     /* background: rgba(0%, 0%, 0%, 0.5); */
+    
 }
 
 @media screen and (max-width: 750px) {
@@ -17,5 +18,7 @@
             "image"
             "main"
             "foot";
+        grid-template-columns: 375px;
+        width: 375px;
     }
 }

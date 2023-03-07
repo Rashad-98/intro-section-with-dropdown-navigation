@@ -57,3 +57,6 @@ class Navbar extends React.Component{
 }
 
 export default Navbar;
+
+//TODO: Add some left and right margin for mobile view to look like specification image
+//      fix the margins in desktop view

@@ -1,0 +1,11 @@
+#main-topic {
+    grid-area: main;   
+    margin-right: 8rem;
+}
+
+#main-title {
+    font-weight: 700;
+    font-size: 4.3rem;
+    position: relative;
+    /* top: 4rem; */
+}
